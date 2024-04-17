@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Petit+Formal+Script&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+	--primarycolor: #272727;
+	--secondarycolor: #DBFF00;
+	--petit: "Petit Formal Script", 'cursive';
+	--krona: "Krona One", sans-serif;
+    --grotesk: "Space Grotesk", sans-serif;
+	--petit: "Petit Formal Script", 'cursive';
+}
+        
+.circle {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 100vmax;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	/* position: absolute;
+	width: 140px;
+	height: 140px;
+	background: url("https://assets.codepen.io/7344750/internal/avatars/users/default.png?fit=crop&format=auto&height=512&version=1657025755&width=512");
+	background-size: cover;
+	border-radius: 100vmax;
+	background-position: center; */
+}
+
+.text-rotate {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: var(--grotesk);
+	color: #000;
+	font-size: 17px;
+	animation: textRotation 8s linear infinite;
+}
+
+@keyframes textRotation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.text-rotate span {
+	position: absolute;
+	left: 50%;
+	font-size: 1.2em;
+	transform-origin: 0 100px;
+	font-weight: 800;
+}
+.ripple-btn {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    border-radius: 50%;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+	font-family: var(--grotesk);
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.ripple-btn > span.bg {
+  background: var(--secondarycolor);
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.ripple-btn:hover{
+  color: black !important;
+}
+
+.ripple-btn:hover > span.bg {
+  transition: all .3s ease-in-out;
+}
+
+
+/* top */
+
+.top > .bg {
+	right: 0;
+	top: 0;
+	transform: translateY(-100%) translateX(100%);
+  }
+  
+  .top:hover > .bg {
+	transform: translateY(0%) translateX(0%);
+  }
+  
+/* marqueee tilted */
+.marquee_container {
+	height: 50vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.marquee {
+	background-color: #000;
+	position: absolute;
+	top: 195px;
+	transform: translateY(-50%) rotate(-5deg);
+	left: -1%;
+	width: 102%;
+	height: fit-content;
+	display: flex;
+	gap: 60px;
+	overflow: hidden;
+}
+
+.marquee_group {
+	display: flex;
+	flex-shrink: 0;
+	gap: 45px;
+	min-width: 15%;
+	align-items: center;
+	justify-content: center;
+	animation: scroll 15s linear infinite;
+}
+
+.marquee_group span {
+	font-size: 55px;
+	font-weight: 900;
+	color: #fff;
+}
+
+.stroke-marque {
+	-webkit-text-fill-color: black;
+	-webkit-text-stroke: 1px white;
+}
+
+@keyframes scroll {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(calc(-100% - 60px));
+	}
+}
+
+.logo-container {
+	display: flex;
+	transform: translateY(-50%) rotate(-5deg);
+	background: #f8f8f8;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 80px;
+	position: absolute;
+	top: 120px;
+	width: 100%;
+}
+
+.logo-container img {
+	width: 100%;
+	object-fit: cover;
+}
+
+@media(min-width:768px) {
+
+	/* ellipse card animation */
+	.ellipse-card {
+		position: relative;
+		z-index: 0;
+		-webkit-transition: border-color .35s ease, background .35s ease;
+		transition: border-color .35s ease, background .35s ease;
+	}
+
+	.ellipse-card:before {
+		background-color: var(--secondarycolor);
+		content: "";
+		display: block;
+		position: absolute;
+		top: 5%;
+		right: 23%;
+		bottom: 95%;
+		left: 75%;
+		z-index: -1;
+		-webkit-transition: all .35s ease;
+		transition: all .35s ease;
+		border-radius: 240px;
+	}
+
+	.ellipse-card:hover:before {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.ellipse-card:hover {
+		color: #2A4556;
+		transition: 0.25s;
+	}
+
+	.ellipse-card:after {
+		position: absolute;
+		right: 2.34375rem;
+		bottom: 50%;
+		-webkit-transform: translateY(50%) translateX(-50%);
+		-ms-transform: translateY(50%) translateX(-50%);
+		transform: translateY(50%) translateX(-50%);
+	}
+
+
+	/* part 2 */
+	
+	/* ellipse card animation */
+	.ellipse-card-2 {
+		position: relative;
+		z-index: 0;
+		-webkit-transition: border-color .35s ease, background .35s ease;
+		transition: border-color .35s ease, background .35s ease;
+		color: #fff;
+	}
+
+	.ellipse-card-2:before {
+		background-color: var(--secondarycolor);
+		content: "";
+		display: block;
+		position: absolute;
+		top: 5%;
+		right: 23%;
+		bottom: 95%;
+		left: 75%;
+		z-index: -1;
+		-webkit-transition: all .35s ease;
+		transition: all .35s ease;
+		border-radius: 240px;
+	}
+
+	.ellipse-card-2:hover:before {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.ellipse-card-2:hover {
+		color: #000000;
+		transition: 0.25s;
+	}
+
+	.ellipse-card-2:after {
+		position: absolute;
+		right: 2.34375rem;
+		bottom: 50%;
+		-webkit-transform: translateY(50%) translateX(-50%);
+		-ms-transform: translateY(50%) translateX(-50%);
+		transform: translateY(50%) translateX(-50%);
+	}
+}
+
+.services-img:hover {
+	transform: translate(-15px, -15px);
+	transition: 1s ease;
+  }
+  .services-img {
+	transition: 1s ease;
+  }
+
+  /* marquee 180deg */
+  
+  .marquee-180 {
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 60px;
+    overflow: hidden;
+  }
+  
+ .marquee_container-180 {
+	height: 15vh;
+    position: relative;
+    overflow: hidden;
+    background: black;
+
+  }
