@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template-1</title>
+      <!-- bootstrap cdn link -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/navbars/navbar-1/assets/css/navbar-1.css">
+
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"
+        integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animationm cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+
+</head>
+
+<body>
+     <!-- header starts -->
+     <header>
+        <nav class="navbar navbar-expand-lg bsb-navbar bsb-navbar-hover bsb-navbar-caret bg-black py-3">
+            <div class="container-lg d-flex flex-lg-row-reverse">
+                <div class="col-md-6 d-flex justify-content-between align-items-center z-1">
+                    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+                    <a href="contact-us.html" class="d-none d-lg-block contact-link">Contact
+                        Us <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <button class="btn text-white border-0 d-lg-none" id="toggleButton" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span id="toggleIcon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse col-md-6" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="navlink" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navlink" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navlink" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="navlink dropdown-toggle" id="services" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu border-0 shadow" aria-labelledby="services">
+                                <li><a class="dropdown-item" href="service-1.html">Services 1</a></li>
+                                <li><a class="dropdown-item" href="service-2.html">Services 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navlink" href="our-team.html">Team</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="navlink " href="contact-us.html">Contact-Us<i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header ends -->
+
+      <!-- about top banner starts -->
+      <section class="bg-black pb-85 d-flex flex-wrap align-items-center" style="height: 80vh;">
+        <div class="container-lg">
+            <div class="d-md-flex">
+                <div class="col-md-8" data-aos="fade-up" data-aos-duration="2000">
+                    <div>
+                        <span class="bg-white px-3 py-2 rounded-5 text-black text-uppercase">WHAT CAN WE DO ?</span>                         
+                        <h1 class="my-4 text-white col-lg-8 col-md-10"><span class="krona-format">We combine our passion for </span><span class="petit-format">design and code.</span></h1>
+                        <p class="col-lg-7 offset-lg-5 col-md-10 offset-md-2 text-secondary">Lorem ipsum dolor sit amet
+                            consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque
+                            ultrices.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-md-1">
+                    <div>
+                        <div class="circle" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="top ripple-btn">
+                                Lets Talk
+                                <span class="bg"></span>
+                            </div>
+                            <div class="text-rotate text-white">
+                                <p>
+                                    Watch This Video-Watch This Video
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about top banner ends -->
+    <!-- marquee text -->
+    <section class="position-relative">
+        <div class="marquee_container-180">
+            <div class="marquee-180">
+                <div class="marquee_group">
+                    <span><img src="assets/images/icons/solid-aig.png" alt=""></span>
+                    <span>aigiorphs</span>
+                </div>
+                <div class="marquee_group">
+                    <span><img src="assets/images/icons/regular-aig.png" alt=""></span>
+                    <span class="stroke-marque">aigiorphs</span>
+                </div>
+                <div class="marquee_group">
+                    <span><img src="assets/images/icons/solid-aig.png" alt=""></span>
+                    <span>aigiorphs</span>
+                </div>
+                <div class="marquee_group">
+                    <span><img src="assets/images/icons/regular-aig.png" alt=""></span>
+                    <span class="stroke-marque">aigiorphs</span>
+                </div>
+                <div class="marquee_group">
+                    <span><img src="assets/images/icons/solid-aig.png" alt=""></span>
+                    <span>aigiorphs</span>
+                </div>
+                <div class="marquee_group">
+                    <span><img src="assets/images/icons/regular-aig.png" alt=""></span>
+                    <span class="stroke-marque">aigiorphs</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- marquee text -->
+
+
+    <!-- trusted companies starts -->
+    <div class="container-lg">
+        <div class="position-relative">
+            <div class="owl-carousel company-carousel py-5">
+                <div class="item">
+                    <img src="assets/images/logos/Google.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/logos/Facebook.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/logos/YouTube.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/logos/Pinterest.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/logos/Twitch.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/images/logos/Webflow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- trusted companies ends -->
+
+     <!-- how we work section starts -->
+     <section class="bg-black py-5">
+        <div class="container-lg d-md-flex">
+            <div class="col-lg-7 col-md-8" data-aos="fade-up" data-aos-duration="2000">
+                <span class="text-white text-uppercase border boredr-white rounded-5 px-4 py-2">How We work</span>
+                <h2 class="my-4"><span class="krona-format text-white">We are inspired </span><span class="petit-format text-white">from user
+                        experience...</span></h2>
+                <p class="offset-md-2 border-start ps-md-3 py-md-3 border-secondary text-white">Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Soluta magni beatae dolor rerum voluptatum minima qui
+                    blanditiis quaerat totam voluptas a quae facere quos, error quod omnis distinctio in perferendis,
+                </p>
+            </div>
+            <div class="col-lg-5 col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-up"
+                data-aos-duration="2500">
+                <div class="">
+                    <div class="circle">
+                        <div class="top ripple-btn">
+                            Lets Talk
+                            <span class="bg"></span>
+                        </div>
+                        <div class="text-rotate text-white">
+                            <p>
+                                Watch This Video - Watch This Video -
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ellipse card starts -->
+        <div class="container-lg">
+            <div class="d-md-flex" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                <div class="col-md-4">
+                    <div class="ellipse-card-2 mt-5 text-center">
+                        <h2>01</h2>
+                        <img src="assets/images/icons/b-atom.png" alt="">
+                        <h3 class="mt-3">Research</h3>
+                        <p class="px-md-3 mt-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae delectus
+                            nostrum in hic mollitia, sunt provident cum asperiores vel?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="ellipse-card-2 mt-5 text-center">
+                        <h2>02</h2>
+                        <img src="assets/images/icons/b-arr.png" alt="">
+                        <h3 class="mt-3">Implement</h3>
+                        <p class="px-md-3 mt-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae delectus
+                            nostrum in hic mollitia, sunt provident cum asperiores vel?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="ellipse-card-2 mt-5 text-center">
+                        <h2>03</h2>
+                        <img src="assets/images/icons/b-bend.png" alt="">
+                        <h3 class="mt-3">Handover</h3>
+                        <p class="px-md-3 mt-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur recusandae delectus
+                            nostrum in hic mollitia, sunt provident cum asperiores vel?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ellipse card ends -->
+    </section>
+    <!-- how we work section ends -->
+     <!-- special offers section starts -->
+     <section class="my-5">
+        <div class="container-lg position-relative">
+            <div class="col-md-10 mx-auto">
+                <div class="special-offers" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                    <div class="col-md-6 special-offers-text" data-aos="fade-up" data-aos-duration="2000">
+                        <h2 class="my-4"><span class="krona-format">We provide special offers for </span><span
+                                class="petit-format">the best customers</span></h2>
+                                <a href="" class="learn-more-btn bg-dark text-white">Learn More <i
+                                    class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="circle-offers-btn d-flex justify-content-center">
+                    <div class="circle" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="top ripple-btn" style="background-color: #fff;">
+                            Play
+                            <span class="bg"></span>
+                        </div>
+                        <div class="text-rotate">
+                            <p>
+                                Watch This Video - Watch This Video -
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- special offers section ends -->
+
+    <!-- our services starts -->
+    <section class="py-5">
+        <div class="container-lg my-5">
+            <div class="col-lg-7 col-md-10 mx-auto text-center" data-aos="fade-up" data-aos-duration="2000">
+                <span class="bg-dark text-white text-uppercase px-3 py-2 rounded-5">Our services</span>
+                <h2 class="my-4"><span class="krona-format">Most experienced </span><span
+                        class="petit-format">services</span></h2>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between col-lg-8 align-items-center mx-auto" data-aos="fade-up"
+                data-aos-duration="2000">
+                <p class="col-md-5">Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus vel
+                    facilisis volutpat est velitolm.</p>
+                <a href="" class="learn-more-btn">Learn More <i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+
+            <div>
+                <div class="services-cards">
+                    <div class="service-1 services-bg px-4 text-center mt-4 mt-md-0" data-aos="fade-up"
+                        data-aos-duration="2000">
+                        <h2 class="pt-4">App Development</h2>
+                        <div class="services-img col-md-12">
+                            <img src="assets/images/home/1.png" alt="" class="img-fluid">
+                        </div>
+                        <p class="pb-4">
+                            Use a pre-designed template or personalize with video, stickers, fonts, and more
+                        </p>
+                    </div>
+                    <div class="service-2 services-bg px-4 d-flex flex-column justify-content-between mt-4 mt-md-0"
+                        data-aos="fade-up" data-aos-duration="2000">
+                        <div class="services-img col-lg-5 col-md-6 offset-md-5 text-center">
+                            <img src="assets/images/home/2.png" alt="" class="img-fluid">
+                        </div>
+                        <div>
+                            <h2>Web Development</h2>
+                            <p class="pb-4 col-md-8 col-lg-10">
+                                Schedule all your cards and gifts now and we’ll send them later
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-3 services-bg px-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="services-img col-md-12 text-md-end text-center">
+                            <img src="assets/images/home/3.png" alt="" class="img-fluid">
+                        </div>
+                        <h2 class="pt-4">Consulting</h2>
+                        <p class="pb-4">
+                            Access all your gifts and save up your Givingli Cash
+                        </p>
+                    </div>
+                    <div class="service-4 mt-4 mt-md-0 d-flex justify-content-center align-items-center"
+                        data-aos="fade-up" data-aos-duration="2000">
+                        <div class="circle">
+                            <div class="top ripple-btn">
+                                Play
+                                <span class="bg"></span>
+                            </div>
+                            <div class="text-rotate">
+                                <p>
+                                    Watch This Video - Watch This Video -
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-5 services-bg px-4 d-flex flex-column justify-content-between mt-4 mt-md-0"
+                        data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                        <div>
+                            <h2 class="pt-4">Digital Marketing</h2>
+                            <p class="pb-4">
+                                Use a pre-designed template or personalize with video, stickers, fonts, and more
+                            </p>
+                        </div>
+                        <div class="services-img col-md-12 text-center">
+                            <img src="assets/images/home/4.png" alt="" class="img-fluid">
+                        </div>
+
+                    </div>
+                    <div class="service-6 services-bg px-4 mt-4 mt-md-0" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="services-img col-md-6 offset-md-5 text-center">
+                            <img src="assets/images/home/5.png" alt="" class="img-fluid">
+                        </div>
+                        <h2>UI/UX Design</h2>
+                        <p class="pb-4">
+                            Use a pre-designed template or personalize with video, stickers, fonts, and more
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our services ends -->
+
+     <!-- our results starts -->
+     <section class="py-5">
+        <div class="container-lg my-5">
+            <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
+                <span
+                    class="border border-1 rounded-5 px-3 py-2 border-black text-uppercase">Achievements</span>
+                <h2 class="my-4"><span class="krona-format">Our results in </span><span
+                        class="petit-format">numbers</span></h2>
+                <p>Lorem ipsum dolor sit amet consectet adipiscing elit eget quamumto.</p>
+            </div>
+            <div class="d-lg-flex">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="bg-sec-color mt-3 rounded-5 h-100 d-flex align-items-end">
+                        <div class="p-5">
+                            <div><img src="assets/images/icons/chart-growth.png" alt=""
+                                    class="bg-dark rounded-4 p-2 mb-4"></div>
+                            <h2 class="fs-2 fw-bold">Company Growth</h2>
+                            <h3 class="fs-1 fw-bold">240%</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-wrap">
+                    <div class="col-6 mt-3" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="h-100 achievements-card border border-1 border-white rounded-5 mx-md-3 m-1 px-3 py-4">
+                            <div><img src="assets/images/icons/stars.png" alt=""></div>
+                            <h4 class="mt-4">Customer satisfaction</h4>
+                            <h2 class="fw-bold">99<span class="fw-bold text-secondary">%</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="h-100 achievements-card border border-1 border-white rounded-5 mx-md-3 m-1 px-3 py-4">
+                            <div><img src="assets/images/icons/Add User.png" alt=""></div>
+                            <h4 class="mt-4">Active user</h4>
+                            <h2 class="fw-bold">32<span class="fw-bold text-secondary">M</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                        <div class="h-100 achievements-card border border-1 border-white rounded-5 mx-md-3 m-1 px-3 py-4">
+                            <div><img src="assets/images/icons/3 User.png" alt=""></div>
+                            <h4 class="mt-4">Team members</h4>
+                            <h2 class="fw-bold">10<span class="fw-bold text-secondary">K</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
+                        <div class="h-100 achievements-card border border-1 border-white rounded-5 mx-md-3 m-1 px-3 py-4">
+                            <div><img src="assets/images/icons/rocket.png" alt=""></div>
+                            <h4 class="mt-4">Success rate</h4>
+                            <h2 class="fw-bold">125<span class="fw-bold text-secondary">+</span></h2>
+                        </div>
+                    </div>
+                </div>               
+            </div>           
+        </div>
+    </section>
+    <!-- our results ends -->
+
+       <!-- have a project starts -->
+       <section class="bg-black">
+        <div class="container-lg py-5">
+            <div class="d-md-flex">
+                <div class="col-md-8" data-aos="fade-up" data-aos-duration="2000">
+                    <h1 class="my-4 col-lg-8 col-md-10 "><span class="krona-format text-white">Have a project in mind? </span><span
+                            class="petit-format text-white">Let's get to work.</span></h1>                
+                    <p class="text-secondary">We shift you from today’s reality to tomorrow’s potential, ensuring
+                    </p>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div>
+                        <div class="circle" data-aos="fade-up" data-aos-duration="2000">
+                            <div class="top ripple-btn">
+                                Lets Talk
+                                <span class="bg"></span>
+                            </div>
+                            <div class="text-rotate text-white">
+                                <p>
+                                    Watch This Video-Watch This Video
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+            <!-- marquee text -->
+    <div class="marquee_container-bottom">
+        <div class="marquee-bottom" style="top: 180px;">
+            <div class="marquee_group">
+                <span><img src="assets/images/icons/solid-aig.png" alt=""></span>
+                <span>aigiorphs</span>
+            </div>
+            <div class="marquee_group">
+                <span><img src="assets/images/icons/regular-aig.png" alt=""></span>
+                <span class="stroke-marque">aigiorphs</span>
+            </div>
+            <div class="marquee_group">
+                <span><img src="assets/images/icons/solid-aig.png" alt=""></span>
+                <span>aigiorphs</span>
+            </div>
+            <div class="marquee_group">
+                <span><img src="assets/images/icons/regular-aig.png" alt=""></span>
+                <span class="stroke-marque">aigiorphs</span>
+            </div>
+            <div class="marquee_group">
+                <span><img src="assets/images/icons/solid-aig.png" alt=""></span>
+                <span>aigiorphs</span>
+            </div>
+            <div class="marquee_group">
+                <span><img src="assets/images/icons/regular-aig.png" alt=""></span>
+                <span class="stroke-marque">aigiorphs</span>
+            </div>
+        </div>
+        <div class="bg-black" style="height: 20vh; position: absolute; width: 100%; top: 180px;">
+        </div>
+    </div>
+
+    </section>
+    <!-- have a project ends -->
+
+
+    
+    <!-- footer starts -->
+    <footer class="bg-black py-5">
+        <div class="container-lg">
+            <div class="d-flex flex-wrap">
+                <div class="col-xl-5 col-md-6 col-12 py-4">
+                    <div><img src="assets/images/footer-logo.png" alt=""></div>
+                    <p class="text-secondary pt-5">Lorem ipsum dolor sit amet consectetur dolol drakgonil adipiscing
+                        elit aliquam mauris</p>
+                    <form action="" class="footer-form">
+                        <div>
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div>
+                            <button class="btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-2 col-md-4 col-12 company-footer offset-md-2 py-4">
+                    <ul class="p-0">
+                        <h5 class="text-white">Company</h5>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-md-12 col-12 py-4">
+                    <h5 class="text-white">Follow On Instagram</h5>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-xl-6 col-md-3 col-3">
+                            <img class="footer-img p-2" src="assets/images/home/footer1.png" alt="">
+                        </div>
+                        <div class="col-xl-6 col-md-3 col-3">
+                            <img class="footer-img p-2" src="assets/images/home/footer2.png" alt="">
+                        </div>
+                        <div class="col-xl-6 col-md-3 col-3">
+                            <img class="footer-img p-2" src="assets/images/home/footer3.png" alt="">
+                        </div>
+                        <div class="col-xl-6 col-md-3 col-3">
+                            <img class="footer-img p-2" src="assets/images/home/footer4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="col-xl-8 col-12 d-md-flex justify-content-between footer-address p-0">
+                    <li class="col-md-3 mt-3"><a href="">08/A, Washington Ave. Manchester, Kentucky 39495</a></li>
+                    <li class="col-md-3 mt-3"><a href="tel:+917875698659">+91 78756-98659</a></li>
+                    <li class="col-md-4 mt-3"><a href="mailto:example.mail@gamil.com">example.mail@gamil.com</a></li>
+                </ul>
+            </div>
+            <hr class="border-2 border-white">
+
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <div class="col-md-6 ">
+                    <p class="text-white">Copyright © 2024 Templates | All Rights Reserved</p>
+                </div>
+                <div class="col-md-6 d-flex footer-sc-icons my-3 justify-content-end">
+                    <a href="" class="me-3"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" class="me-3"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="" class="me-3"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="me-3"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="" class=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        AOS.init();
+          // company carousel
+          $('.company-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                },
+                1300: {
+                    items: 6
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
